@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>RoboFighters|FLL Team</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+
+<div class="sep_p"></div>
+<nav class="nav_p">
+    <div class="logo">
+      <h3>RoboFighters</h3>
+    </div>
+
+    <div class="burger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <ul class="nav-links_p">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./project.html">Our project</a></li>
+      <li><a href="./robot.html">Our robot</a></li>
+      <li><a href="./values.html">Our values</a></li>
+      <li><a href="./index.html#contact">contact</a></li>
+    </ul>
+</nav>
+
+
+<!-- project page -->
+
+<section class="innovation-page">
+  <img src="./assets/logo_new.png" class="big_logo_p">
+  <h1>Our Innovation Project</h1>
+  <p class="subtitle">A brief overview of our project: the main goal of our project is to protect artifacts from weather factors like heat and humidity and also show the engravings on the artifact, it also comes with an anti-theft system. </p>
+
+  <!-- Innovation Highlights -->
+  <div class="innovation-grid">
+    <div class="innovation-card">
+      <h3>Built in fan design</h3>
+      <p>Fan maintains a safe environment by controlling heat and humidity measured with a tempreture and humidity sensor (DHT)</p>
+    </div>
+    <div class="innovation-card">
+      <h3>Smart lighting</h3>
+      <p>Smart ring light automatically adjusts lighting for clear engravings according to the light sensor and color sensor.</p>
+    </div>
+    <div class="innovation-card">
+      <h3>Anti-theft system</h3>
+      <p>Anti-theft system using ultrasonic and vibration sensors to monitor artifact safety</p>
+    </div>
+  </div>
+
+  <div class="prop">
+    <div class="prop_card">
+        <img class="img_prop" src="./assets/pro_v1.jpeg">
+        <p class="prop_des">Project V-1</p>
+    </div>
+    <div class="arrow">
+    ➜
+  </div>
+    <div class="prop_card">
+        <img class="img_prop" src="./assets/project_v2.jpeg">
+        <p class="prop_des">Project V-2</p>
+    </div>
+  </div>
+
+
+  <!-- Visits Gallery -->
+  <h2>Our Visits</h2>
+  <div class="visit-gallery">
+    <div class="visit-card">
+      <div class="image-switch" onclick="switchImage(this)">
+        <img src="./assets/qnm_1.jpeg" class="img active">
+        <img src="./assets/qnm_2.jpeg" class="img">
+      </div>
+      <p>Visit to the Qatar National Museum</p>
+    </div>
+
+    <div class="visit-gallery">
+    <div class="visit-card">
+      <div class="image-switch" onclick="switchImage(this)">
+        <img src="./assets/egp_1.jpeg" class="img active">
+        <img src="./assets/egp_2.jpeg" class="img">
+      </div>
+      <p>Visit to the Grand Egypt Museum</p>
+    </div>
+
+    <div class="visit-card">
+      <div class="image-switch" onclick="switchImage(this)">
+        <img src="./assets/islam_mus_2.jpeg" class="img active">
+        <img src="./assets/islam_mus_1.jpeg" class="img">
+      </div>
+      <p>Visiting Qatar Islamic Art Musuem</p>
+    </div>
+    <div class="visit-gallery">
+    <div class="visit-card">
+      <div class="image-switch" onclick="switchImage(this)">
+        <img src="./assets/q_mus.jpeg" class="img active">
+        <img src="./assets/q_mus_2.jpeg" class="img">
+      </div>
+      <p>Visit to the (Qatar Museums / إدارة الآثار)</p>
+    </div>
+    
+  </div>
+</section>
+
+
+<script src="js/nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // animation duration
+    easing: 'ease-in-out', // easing effect
+    once: true, // animate only once
+    mirror: false // animate on scrolling up
+  });
+</script>
+
+<script>
+  function switchImage(container) {
+    const images = container.querySelectorAll(".img");
+    images[0].classList.toggle("active");
+    images[1].classList.toggle("active");
+  }
+</script>
+
+
+
+</body>
+</html>
